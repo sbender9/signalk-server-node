@@ -98,7 +98,10 @@
     "winston": "^2.3.0",
     "winston-daily-rotate-file": "^1.4.4",
     "ws": "^3.0.0",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.17",
+    "express-react-views": "^0.10.2",
+    "react": "^15.6.1",
+    "react-dom": "15.6.1"
   },
   "devDependencies": {
     "chai": "^4.0.0",
