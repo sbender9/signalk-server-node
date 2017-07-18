@@ -4,5 +4,10 @@ block link
     -var pageName = 'Apps';
     
 block content
-  div!= html
+    ul.list-group
+    each componentInfo in apps
+      .li.list-group-item
+        b
+          a(href='#{componentInfo.name}')= componentInfo.name
+        p #{componentInfo.description}
 
