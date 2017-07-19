@@ -4,17 +4,16 @@ var DefaultLayout = require('./layouts/default');
 
 var Row = createReactClass({
   render() {
-    var name = this.props.moduleInfo.package.name;
-    var version = this.props.moduleInfo.package.version;
+    var module = this.props.moduleInfo
    
     return (
         <tr>
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.installColumn}} />
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.updateColumn}} />
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.nameColumn}} />
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.descriptionColumn}} />
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.authorColumn}} />
-        <td dangerouslySetInnerHTML={{__html: this.props.moduleInfo.npmColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.installColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.updateColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.nameColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.descriptionColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.authorColumn}} />
+        <td dangerouslySetInnerHTML={{__html: module.npmColumn}} />
        </tr>
     );
   }
